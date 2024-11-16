@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Admin - Parktout</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: white;
+            color: black;
+            padding: 10px 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        header img {
+            height: 200px;
+            margin-right: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #2ecc71; /* Vert clair */
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2ecc71; /* Vert clair */
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding-top: 30px;
+        }
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sidebar a i {
+            margin-right: 10px;
+        }
+        .sidebar a:hover {
+            background-color: #0000FF; /* Vert foncé */
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            margin: 0 0 10px;
+            color: #27ae60;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\ghanm\Downloads\Red Illustrated Park Here Yard Sign (1).png" alt="Logo Parktout">
+        <h1>Dashboard Admin - Parktout</h1>
+    </header>
+    <div class="sidebar">
+        <a href="#users"><i class="fas fa-users"></i>Gestion des utilisateurs</a>
+        <a href="#parkings"><i class="fas fa-parking"></i>Gestion des parkings</a>
+        <a href="#payments"><i class="fas fa-dollar-sign"></i>Suivi des paiements</a>
+        <a href="#partners"><i class="fas fa-handshake"></i>Collaborations</a>
+    </div>
+    <div class="main-content">
+        <div class="card" id="users">
+            <h3><i class="fas fa-users"></i> Gestion des utilisateurs</h3>
+            <p>Visualisez, suspendez ou supprimez des utilisateurs.</p>
+            <a href="#" class="btn">Voir les utilisateurs</a>
+        </div>
+        <div class="card" id="parkings">
+            <h3><i class="fas fa-parking"></i> Gestion des parkings</h3>
+            <p>Ajoutez, modifiez ou supprimez des informations sur les parkings.</p>
+            <a href="#" class="btn">Gérer les parkings</a>
+        </div>
+        <div class="card" id="payments">
+            <h3><i class="fas fa-dollar-sign"></i> Suivi des paiements</h3>
+            <p>Suivez les paiements, remboursements et facturations.</p>
+            <a href="#" class="btn">Voir les paiements</a>
+        </div>
+        <div class="card" id="partners">
+            <h3><i class="fas fa-handshake"></i> Collaborations</h3>
+            <p>Gérez les partenaires et leurs contrats de collaboration.</p>
+            <a href="#" class="btn">Voir les partenaires</a>
+        </div>
+    </div>
+</body>
+</html>
